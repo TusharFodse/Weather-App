@@ -1,0 +1,137 @@
+/* Reset some default styles */
+body, h1, p, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-box i {
+    font-size: 24px;
+    color: #333;
+    margin-right: 10px;
+}
+
+.search-box input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.search-box button {
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box button:hover {
+    background: #555;
+}
+
+.weather-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.weather-box .box {
+    text-align: center;
+}
+
+.weather-box .info-weather img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.weather-box .temperature {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.weather-box .description {
+    font-size: 20px;
+    color: #666;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weather-details .humidity, .weather-details .wind {
+    flex: 1;
+    text-align: center;
+}
+
+.weather-details .humidity i, .weather-details .wind i {
+    font-size: 36px;
+    color: #333;
+}
+
+.weather-details .text {
+    margin-top: 10px;
+}
+
+.weather-details .info-humidity, .weather-details .info-wind {
+    font-size: 24px;
+}
+
+.weather-details p {
+    margin-top: 5px;
+    color: #666;
+}
+
+.not-found {
+    display: none; /* Initially hide this element */
+    text-align: center;
+}
+
+.not-found .box {
+    margin-top: 20px;
+}
+
+.not-found img {
+    width: 150px;
+    height: auto;
+}
+
+.not-found p {
+    font-size: 18px;
+    color: #ff0000;
+    margin-top: 10px;
+}
+
+/* Show the not-found section if there is an error (could be toggled via JavaScript) */
+.not-found.show {
+    display: block;
+}
