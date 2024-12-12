@@ -31,7 +31,7 @@ This is a simple weather web application that allows users to search for weather
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/weather-web-app.git
+   git clone https://github.com/TusharFodse/Weather-App.git
    ```
 2. Navigate to the project directory:
    ```bash
